@@ -1,2 +1,8 @@
 
 *.xcuserstate
+
+.DS_Store
+
+*.xcbkptlist
+
+Movies/Movies.xcodeproj/xcuserdata/santiagobrinez.xcuserdatad/xcschemes/xcschememanagement.plist

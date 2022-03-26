@@ -28,6 +28,12 @@ gitkraken https://www.gitkraken.com
 Para el desarrollo del app, se debe partir de `devel` creando las ramas que contendran los fixes o nuevos features del app.
 NUNCA se debe desarrollar y hacer push directo sobre las ramas `main` y `devel`
 
+### Estandar para nombrar ramas
+tipo/modulo/descripcion-corta
+
+### Estandar para nombrar commit
+tipo(modulo): descripcion corta sobre el contenido del commit
+
 ## Creacion de Pull request
 En la description se debe utilizar el siguiente formato, usando las secciones que sean necesarias
 ## ✨ What does this PR do?

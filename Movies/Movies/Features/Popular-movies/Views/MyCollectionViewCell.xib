@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="302" height="258"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="302" height="258"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1LK-Uy-UUT">
+                        <rect key="frame" x="0.0" y="0.0" width="302" height="258"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-96-Hxp">
+                        <rect key="frame" x="0.0" y="0.0" width="302" height="258"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Cb2-96-Hxp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1ML-VM-9x0"/>
+                <constraint firstItem="Cb2-96-Hxp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GGw-5c-HC8"/>
+                <constraint firstItem="1LK-Uy-UUT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="M3S-X6-3yD"/>
+                <constraint firstItem="1LK-Uy-UUT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Tp8-Cc-ujH"/>
+                <constraint firstAttribute="trailing" secondItem="Cb2-96-Hxp" secondAttribute="trailing" id="Vnf-TO-nWI"/>
+                <constraint firstAttribute="bottom" secondItem="1LK-Uy-UUT" secondAttribute="bottom" id="l56-5m-mRB"/>
+                <constraint firstAttribute="trailing" secondItem="1LK-Uy-UUT" secondAttribute="trailing" id="mPe-OG-LHe"/>
+                <constraint firstAttribute="bottom" secondItem="Cb2-96-Hxp" secondAttribute="bottom" id="sDH-HZ-l6n"/>
+            </constraints>
+            <size key="customSize" width="302" height="258"/>
+            <connections>
+                <outlet property="imageView" destination="1LK-Uy-UUT" id="nDb-bl-i7D"/>
+                <outlet property="myLabel" destination="Cb2-96-Hxp" id="0zJ-qd-oGJ"/>
+            </connections>
+            <point key="canvasLocation" x="115.94202898550725" y="61.607142857142854"/>
+        </collectionViewCell>
+    </objects>
+</document>

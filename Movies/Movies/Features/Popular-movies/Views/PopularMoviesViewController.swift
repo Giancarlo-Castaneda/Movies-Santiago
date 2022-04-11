@@ -42,13 +42,23 @@ extension PopularMoviesViewController: UICollectionViewDataSource {
 
 extension PopularMoviesViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: 100, height: 100)
+        let spacing = CGFloat(10)
+        let items = CGFloat(2)
+        let totalSpacing = CGFloat(spacing*items)
+        let width = (collectionView.frame.width-totalSpacing)/items
+        return CGSize(width: width , height: width+100)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         CGFloat(10)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         CGFloat(10)
+    }
+}
+
+extension PopularMoviesViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.navigationController?.pushViewController(MoviesDetailViewController(), animated: true)
     }
 }
 

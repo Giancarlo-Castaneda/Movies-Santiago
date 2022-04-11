@@ -1,5 +1,5 @@
 import UIKit
-import Nuke
+import Kingfisher
 
 class MyCollectionViewCell: UICollectionViewCell {
     
@@ -8,8 +8,12 @@ class MyCollectionViewCell: UICollectionViewCell {
     static let identifier = "cell"
     
     func configureCell(movie: PopularMoviesResult) {
-        myLabel.text = movie.title
         let url = "https://image.tmdb.org/t/p/w500" + (movie.posterPath ?? "")
-        Nuke.loadImage(with: url, into: imageView)
+        if let URL = URL(string: url) {
+            let process = DownsamplingImageProcessor(size: imageView.bounds.size)
+            imageView.kf.indicatorType = .activity
+            imageView.kf.setImage(with: URL, placeholder: nil, options: [.processor(process)], completionHandler: nil)
+        }
+        contentView.backgroundColor = UIColor.red
     }
 }

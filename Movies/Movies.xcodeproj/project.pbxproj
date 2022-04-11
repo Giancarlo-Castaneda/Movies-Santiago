@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		2997D09727ED6B550064D85B /* PopularMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997D09627ED6B550064D85B /* PopularMoviesModel.swift */; };
 		2997D09927ED74DD0064D85B /* PopularMoviesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997D09827ED74DD0064D85B /* PopularMoviesResult.swift */; };
+		299C97B12804874100BB105B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 299C97B02804874100BB105B /* Kingfisher */; };
 		29A29E9A27F3EDD500253F00 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A29E9827F3EDD500253F00 /* MyCollectionViewCell.swift */; };
 		29A29E9B27F3EDD500253F00 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29A29E9927F3EDD500253F00 /* MyCollectionViewCell.xib */; };
 		29A29EA127F3F7EC00253F00 /* PopularMoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A29EA027F3F7EC00253F00 /* PopularMoviesService.swift */; };
 		29A29EA327F4046A00253F00 /* PopularMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A29EA227F4046A00253F00 /* PopularMoviesViewModel.swift */; };
-		29A29EA627F41AF300253F00 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 29A29EA527F41AF300253F00 /* Nuke */; };
+		29AB89FF27FE5E4F00AEBB58 /* MoviesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AB89FE27FE5E4F00AEBB58 /* MoviesDetailViewController.swift */; };
 		AB28A59327E536350019A330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB28A59227E536350019A330 /* AppDelegate.swift */; };
 		AB28A59527E536350019A330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB28A59427E536350019A330 /* SceneDelegate.swift */; };
 		AB28A59727E536350019A330 /* PopularMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB28A59627E536350019A330 /* PopularMoviesViewController.swift */; };
@@ -49,6 +50,7 @@
 		29A29E9927F3EDD500253F00 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		29A29EA027F3F7EC00253F00 /* PopularMoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesService.swift; sourceTree = "<group>"; };
 		29A29EA227F4046A00253F00 /* PopularMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesViewModel.swift; sourceTree = "<group>"; };
+		29AB89FE27FE5E4F00AEBB58 /* MoviesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailViewController.swift; sourceTree = "<group>"; };
 		AB28A58F27E536350019A330 /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB28A59227E536350019A330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB28A59427E536350019A330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29A29EA627F41AF300253F00 /* Nuke in Frameworks */,
+				299C97B12804874100BB105B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +95,7 @@
 		2997D09127ED6A950064D85B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				29AB89FC27FE5E0D00AEBB58 /* Movies_detail */,
 				29A29E9D27F3F6D700253F00 /* Upcoming-movies */,
 				2997D09227ED6AA70064D85B /* Popular-movies */,
 			);
@@ -150,6 +153,22 @@
 				29A29EA027F3F7EC00253F00 /* PopularMoviesService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		29AB89FC27FE5E0D00AEBB58 /* Movies_detail */ = {
+			isa = PBXGroup;
+			children = (
+				29AB89FD27FE5E2C00AEBB58 /* Views */,
+			);
+			path = Movies_detail;
+			sourceTree = "<group>";
+		};
+		29AB89FD27FE5E2C00AEBB58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29AB89FE27FE5E4F00AEBB58 /* MoviesDetailViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AB28A58627E536350019A330 = {
@@ -220,7 +239,7 @@
 			);
 			name = Movies;
 			packageProductDependencies = (
-				29A29EA527F41AF300253F00 /* Nuke */,
+				299C97B02804874100BB105B /* Kingfisher */,
 			);
 			productName = Movies;
 			productReference = AB28A58F27E536350019A330 /* Movies.app */;
@@ -295,7 +314,7 @@
 			);
 			mainGroup = AB28A58627E536350019A330;
 			packageReferences = (
-				29A29EA427F41AF300253F00 /* XCRemoteSwiftPackageReference "Nuke" */,
+				299C97AF2804874100BB105B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = AB28A59027E536350019A330 /* Products */;
 			projectDirPath = "";
@@ -346,6 +365,7 @@
 				29A29EA127F3F7EC00253F00 /* PopularMoviesService.swift in Sources */,
 				29A29EA327F4046A00253F00 /* PopularMoviesViewModel.swift in Sources */,
 				AB28A59327E536350019A330 /* AppDelegate.swift in Sources */,
+				29AB89FF27FE5E4F00AEBB58 /* MoviesDetailViewController.swift in Sources */,
 				2997D09927ED74DD0064D85B /* PopularMoviesResult.swift in Sources */,
 				2997D09727ED6B550064D85B /* PopularMoviesModel.swift in Sources */,
 				AB28A59527E536350019A330 /* SceneDelegate.swift in Sources */,
@@ -686,21 +706,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		29A29EA427F41AF300253F00 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+		299C97AF2804874100BB105B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kean/Nuke.git";
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.0.0;
+				minimumVersion = 7.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		29A29EA527F41AF300253F00 /* Nuke */ = {
+		299C97B02804874100BB105B /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 29A29EA427F41AF300253F00 /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = Nuke;
+			package = 299C97AF2804874100BB105B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
